@@ -102,3 +102,19 @@ extension ViewController: UICollectionViewDelegate {
     }
 }
 
+extension ViewController: UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        // 例えば端末サイズの半分の width と height にして 2 列にする場合
+//        let width: CGFloat = UIScreen.main.bounds.width / 2
+//        let height = width
+//        return CGSize(width: width, height: height)
+//    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // 例えば端末サイズの半分の width と height にして 2 列にする場合
+        let width: CGFloat = UIScreen.main.bounds.width / 2
+        let height = width
+        return CGSize(width: width, height: height)
+    }
+}
+
